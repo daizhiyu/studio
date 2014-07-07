@@ -10,8 +10,8 @@
   <header class="primary" role="banner">
 
     <div class="wrapper wrapper-l">
-      ## "edX Studio" should not be translated
-      <h1 class="branding"><a href="/"><img src="${static.url("img/logo-edx-studio.png")}" alt="edX Studio" /></a></h1>
+      ## "sou Studio" should not be translated
+      <h1 class="branding"><a href="/"><img src="${static.url("images/SouLogo.png.png")}" alt="SouStudio" /></a></h1>
 
       % if context_course:
       <%
@@ -150,12 +150,8 @@
       <nav class="nav-not-signedin nav-pitch">
         <h2 class="sr">${_("You're not currently signed in")}</h2>
         <ol>
-          <li class="nav-item nav-not-signedin-help">
-            <a href="${get_online_help_info(online_help_token)['doc_url']}" title="${_("Contextual Online Help")}" target="${_("_blank")}">${_("Help")}</a>
-          </li>
-          <li class="nav-item nav-not-signedin-signup">
-            <a class="action action-signup" href="${reverse('signup')}">${_("Sign Up")}</a>
-          </li>
+          
+         
           <li class="nav-item nav-not-signedin-signin">
             <a class="action action-signin" href="${reverse('login')}">${_("Sign In")}</a>
           </li>
